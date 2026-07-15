@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jed Cars — Quality Pre-Owned Vehicles</title>
+<meta name="description" content="Jed Cars — inspected, reconditioned, ready-to-drive pre-owned vehicles. Browse our current inventory and inquire today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- decorative shutter pattern layer -->
+<div class="shutter-bg" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-row">
+    <a class="brand" href="#top">
+      <span class="brand-mark">JC</span>
+      <span class="brand-text">JED<em>CARS</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#inventory">Inventory</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#inquire">Inquire</a>
+      <a class="nav-cta" href="#inquire">Get a Quote</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="assets/cars/mustang-black.jpg" alt="Black Ford Mustang GT parked in showroom" loading="eager">
+      <div class="hero-scrim"></div>
+    </div>
+    <div class="wrap hero-content">
+      <p class="eyebrow">Est. lot &middot; Trusted local dealer</p>
+      <h1>Every unit inspected.<br>Every deal, straight to the point.</h1>
+      <p class="hero-sub">Jed Cars sources, reconditions, and hand-checks every vehicle before it hits the lot — so what you test drive is exactly what you drive home.</p>
+      <div class="hero-actions">
+        <a href="#inventory" class="btn btn-primary">View Inventory</a>
+        <a href="#inquire" class="btn btn-ghost">Talk to Jed</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">120+</span><span class="stat-label">Units sold</span></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Inspected</span></div>
+        <div class="stat"><span class="stat-num">6</span><span class="stat-label">On the lot now</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>SEDANS</span><span>&#9679;</span><span>SUVs</span><span>&#9679;</span><span>PICKUPS</span><span>&#9679;</span><span>HATCHBACKS</span><span>&#9679;</span><span>MPVs</span><span>&#9679;</span>
+      <span>SEDANS</span><span>&#9679;</span><span>SUVs</span><span>&#9679;</span><span>PICKUPS</span><span>&#9679;</span><span>HATCHBACKS</span><span>&#9679;</span><span>MPVs</span><span>&#9679;</span>
+    </div>
+  </div>
+
+  <!-- INVENTORY -->
+  <section class="inventory" id="inventory">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Current stock</p>
+        <h2>On the Lot This Week</h2>
+        <p class="section-sub">A rotating lineup — six examples currently ready for viewing. Tap a listing to send an inquiry directly.</p>
+      </div>
+
+      <div class="filter-row" role="tablist" aria-label="Filter inventory by body type">
+        <button class="filter-chip is-active" data-filter="all">All</button>
+        <button class="filter-chip" data-filter="sedan">Sports Coupe</button>
+        <button class="filter-chip" data-filter="suv">SUV</button>
+        <button class="filter-chip" data-filter="mpv">MPV</button>
+        <button class="filter-chip" data-filter="pickup">Pickup</button>
+      </div>
+
+      <div class="listing-grid" id="listingGrid">
+        <!-- Listing 1 -->
+        <article class="car-card" data-type="sedan">
+          <div class="car-media">
+            <img src="assets/cars/mustang-black.jpg" alt="2019 Ford Mustang GT, matte black with red racing stripe" loading="lazy">
+            <span class="plate-tag">SOLD SOON</span>
+          </div>
+          <div class="car-body">
+            <div class="car-title-row">
+              <h3>Ford Mustang GT 5.0</h3>
+              <span class="car-price">₱2,395,000</span>
+            </div>
+            <p class="car-year">2019 &middot; Coupe</p>
+            <ul class="car-specs">
+              <li>5.0L V8</li>
+              <li>Automatic</li>
+              <li>32,000 km</li>
+              <li>Gasoline</li>
+            </ul>
+            <button class="btn btn-outline btn-block js-inquire" data-car="Ford Mustang GT 5.0 (2019, Matte Black)">Inquire About This Unit</button>
+          </div>
+        </article>
+
+        <!-- Listing 2 -->
+        <article class="car-card" data-type="sedan">
+          <div class="car-media">
+            <img src="assets/cars/mustang-navy.jpg" alt="Ford Mustang GT with white racing stripes" loading="lazy">
+          </div>
+          <div class="car-body">
+            <div class="car-title-row">
+              <h3>Ford Mustang GT Premium</h3>
+              <span class="car-price">₱2,590,000</span>
+            </div>
+            <p class="car-year">2020 &middot; Coupe</p>
+            <ul class="car-specs">
+              <li>5.0L V8</li>
+              <li>Automatic</li>
+              <li>18,500 km</li>
+              <li>Gasoline</li>
+            </ul>
+            <button class="btn btn-outline btn-block js-inquire" data-car="Ford Mustang GT Premium (2020, Navy w/ Stripes)">Inquire About This Unit</button>
+          </div>
+        </article>
+
+        <!-- Listing 3 -->
+        <article class="car-card" data-type="suv">
+          <div class="car-media">
+            <img src="assets/cars/fortuner-white.jpg" alt="White Toyota Fortuner SUV" loading="lazy">
+            <span class="plate-tag">LOW MILEAGE</span>
+          </div>
+          <div class="car-body">
+            <div class="car-title-row">
+              <h3>Toyota Fortuner G</h3>
+              <span class="car-price">₱1,485,000</span>
+            </div>
+            <p class="car-year">2017 &middot; SUV</p>
+            <ul class="car-specs">
+              <li>2.4L Diesel</li>
+              <li>Automatic</li>
+              <li>54,200 km</li>
+              <li>7-Seater</li>
+            </ul>
+            <button class="btn btn-outline btn-block js-inquire" data-car="Toyota Fortuner G (2017, Pearl White)">Inquire About This Unit</button>
+          </div>
+        </article>
+
+        <!-- Listing 4 -->
+        <article class="car-card" data-type="mpv">
+          <div class="car-media">
+            <img src="assets/cars/xpander-white.jpg" alt="White Mitsubishi Xpander MPV" loading="lazy">
+          </div>
+          <div class="car-body">
+            <div class="car-title-row">
+              <h3>Mitsubishi Xpander GLS</h3>
+              <span class="car-price">₱848,000</span>
+            </div>
+            <p class="car-year">2021 &middot; MPV</p>
+            <ul class="car-specs">
+              <li>1.5L Gas</li>
+              <li>Automatic</li>
+              <li>29,800 km</li>
+              <li>7-Seater</li>
+            </ul>
+            <button class="btn btn-outline btn-block js-inquire" data-car="Mitsubishi Xpander GLS (2021, White)">Inquire About This Unit</button>
+          </div>
+        </article>
+
+        <!-- Listing 5 -->
+        <article class="car-card" data-type="pickup">
+          <div class="car-media">
+            <img src="assets/cars/navara-grey.jpg" alt="Grey Nissan Navara pickup truck" loading="lazy">
+            <span class="plate-tag">JUST ARRIVED</span>
+          </div>
+          <div class="car-body">
+            <div class="car-title-row">
+              <h3>Nissan Navara Pro-4X</h3>
+              <span class="car-price">₱1,675,000</span>
+            </div>
+            <p class="car-year">2022 &middot; Pickup</p>
+            <ul class="car-specs">
+              <li>2.5L Diesel</li>
+              <li>Automatic 4x4</li>
+              <li>21,300 km</li>
+              <li>Off-Road Pkg</li>
+            </ul>
+            <button class="btn btn-outline btn-block js-inquire" data-car="Nissan Navara Pro-4X (2022, Grey)">Inquire About This Unit</button>
+          </div>
+        </article>
+
+        <!-- Listing 6 -->
+        <article class="car-card" data-type="suv">
+          <div class="car-media">
+            <img src="assets/cars/countryman-blue.jpg" alt="Blue MINI Cooper Countryman S" loading="lazy">
+          </div>
+          <div class="car-body">
+            <div class="car-title-row">
+              <h3>MINI Cooper Countryman S</h3>
+              <span class="car-price">₱1,290,000</span>
+            </div>
+            <p class="car-year">2018 &middot; Crossover</p>
+            <ul class="car-specs">
+              <li>2.0L Turbo</li>
+              <li>Automatic</li>
+              <li>26,900 km</li>
+              <li>AWD ALL4</li>
+            </ul>
+            <button class="btn btn-outline btn-block js-inquire" data-car="MINI Cooper Countryman S (2018, British Racing Blue)">Inquire About This Unit</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-us" id="why-us">
+    <div class="wrap why-grid">
+      <div class="why-copy">
+        <p class="eyebrow">Why buy from the lot</p>
+        <h2>No haggling games. No hidden mileage stories.</h2>
+        <p>Jed Cars runs a straightforward lot — every unit goes through a documented mechanical and cosmetic check before pricing, and every price on this page is the price you'll hear in person.</p>
+      </div>
+      <ul class="why-list">
+        <li>
+          <span class="why-index">01</span>
+          <div><h3>Full Inspection Report</h3><p>Engine, transmission, suspension, and electrical checked and logged before listing.</p></div>
+        </li>
+        <li>
+          <span class="why-index">02</span>
+          <div><h3>Verified Mileage &amp; Papers</h3><p>Clean OR/CR, verified odometer history, no run-arounds at transfer.</p></div>
+        </li>
+        <li>
+          <span class="why-index">03</span>
+          <div><h3>Financing Assistance</h3><p>In-house guidance through bank and in-house financing options.</p></div>
+        </li>
+        <li>
+          <span class="why-index">04</span>
+          <div><h3>7-Day Exchange Window</h3><p>Not the right fit after pickup? Swap it within the first week.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- INQUIRY -->
+  <section class="inquire" id="inquire">
+    <div class="wrap inquire-grid">
+      <div class="inquire-copy">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Send an Inquiry</h2>
+        <p>Fill this out and our team replies within one business day — or reach us directly through the details below.</p>
+
+        <div class="contact-block">
+          <div class="contact-item">
+            <span class="contact-label">Facebook</span>
+            <a href="https://www.facebook.com/profile.php?id=100064091554817" target="_blank" rel="noopener">facebook.com/jedscars</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Phone</span>
+            <a href="tel:+639000000000">0900 000 0000</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Lot Hours</span>
+            <span>Mon–Sat, 9:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="inquiry-form" id="inquiryForm">
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+
+        <label class="field">
+          <span>Full Name</span>
+          <input type="text" name="name" required placeholder="Juan Dela Cruz">
+        </label>
+
+        <div class="field-row">
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@email.com">
+          </label>
+          <label class="field">
+            <span>Phone</span>
+            <input type="tel" name="phone" required placeholder="09XX XXX XXXX">
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Car of Interest</span>
+          <select name="car" id="carSelect">
+            <option value="">General inquiry</option>
+            <option>Ford Mustang GT 5.0 (2019, Matte Black)</option>
+            <option>Ford Mustang GT Premium (2020, Navy w/ Stripes)</option>
+            <option>Toyota Fortuner G (2017, Pearl White)</option>
+            <option>Mitsubishi Xpander GLS (2021, White)</option>
+            <option>Nissan Navara Pro-4X (2022, Grey)</option>
+            <option>MINI Cooper Countryman S (2018, British Racing Blue)</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Message</span>
+          <textarea name="message" rows="4" placeholder="I'd like to schedule a viewing..."></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit Inquiry</button>
+        <p class="form-note">This demo form stores nothing — wire it up to Formspree, EmailJS, or your own backend to receive real inquiries. See README.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <div class="brand footer-brand">
+      <span class="brand-mark">JC</span>
+      <span class="brand-text">JED<em>CARS</em></span>
+    </div>
+    <p class="footer-note">&copy; <span id="year"></span> Jed Cars. All units subject to prior sale. Prices shown are sample listings for demo purposes.</p>
+    <a class="footer-fb" href="https://www.facebook.com/profile.php?id=100064091554817" target="_blank" rel="noopener">Facebook &#8599;</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
